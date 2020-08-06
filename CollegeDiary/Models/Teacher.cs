@@ -10,6 +10,6 @@ namespace CollegeDiary.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public List<string> TeacherTeachSubjects { get; set; }
+        public List<string> TeacherTeachSubjects { get; set; } = new List<string>();
     }
 }
