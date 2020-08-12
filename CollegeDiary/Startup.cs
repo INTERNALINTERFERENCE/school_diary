@@ -28,13 +28,11 @@ namespace CollegeDiary
             }
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "Default",
-                    pattern: "{controller}/{action}",
-                    new { controller = "Account", action = "Login" });
+                endpoints.MapControllerRoute("Default", "{controller}/{action}");                   
             });
         }
     }

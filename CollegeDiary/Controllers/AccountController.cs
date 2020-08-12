@@ -8,11 +8,11 @@ namespace CollegeDiary.Controllers
 {
     public class AccountController : Controller
     {
-        public IActionResult Register()
+        public IActionResult Login()
         {
             return View();
         }
-        public IActionResult Login()
+        public IActionResult Register()
         {
             return View();
         }
